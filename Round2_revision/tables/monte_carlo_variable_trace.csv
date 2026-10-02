@@ -1,0 +1,11 @@
+SampledVariable,Sampled,PassedToOptimiser,PassedToRecalcCost,ChangesDispatch,ChangesCost,Explanation,Source
+day choice,True,False,True,False,True,Selects stored pair; recovered by RNG replay,results_extension/run_monte_carlo_uncertainty.m
+import tariff,True,False,True,False,True,Reprices stored grid import,results_extension/run_monte_carlo_uncertainty.m
+export tariff,True,False,True,False,True,Reprices stored grid export,results_extension/run_monte_carlo_uncertainty.m
+EV degradation multiplier,True,False,True,False,True,Scales stored EV cost,results_extension/run_monte_carlo_uncertainty.m
+battery degradation multiplier,True,False,True,False,True,Scales stored battery cost,results_extension/run_monte_carlo_uncertainty.m
+PV,True,False,False,False,False,Generated but not used by recalcCost,results_extension/run_monte_carlo_uncertainty.m
+load,True,False,False,False,False,Generated but not used by recalcCost,results_extension/run_monte_carlo_uncertainty.m
+trip,True,False,False,False,False,Generated but not used by recalcCost,results_extension/run_monte_carlo_uncertainty.m
+arrival,True,False,False,False,False,Generated but not used by recalcCost,results_extension/run_monte_carlo_uncertainty.m
+departure,True,False,False,False,False,Generated but not used by recalcCost,results_extension/run_monte_carlo_uncertainty.m

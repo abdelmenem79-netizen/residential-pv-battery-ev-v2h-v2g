@@ -1,0 +1,15 @@
+Component,File/function,Current implementation,Problem found,Required action,Reviewer point
+Shared optimisation,P3_V2H_V2G_Project/src/optimisation/solveStorageRegimeCVX.m,864 declared continuous and 1440 binary scalars,Reserve contradiction; no EV terminal constraint,Audited fork solveRound2.m,"1,2"
+Reserve,src/optimisation/buildConstraints.m; solveRound2.m,Nonnegative next-day peak net forecast,Reserve >3 kWh conflicts with SOC upper bound,Cap achievable reserve; report unmet forecast,1
+Objective,src/optimisation/buildObjective.m,Import minus export plus two degradation proxies,Default relative native gap distorted by objective offset,Keep objective; absolute gap 1e-8 GBP,"1,2,5"
+EV mobility,src/ev/buildEVProfile.m; computeTripEnergy.m,Availability-gated; first-trip 90% equality if applicable; withdrawal after departure,No universal 07:30 departure; day dependent,Retain mobility and timing unchanged,"2,4"
+Terminal energy,solveRound2.m,Historical none,Daily depletion not priced as restoration,All90 >=initial; chronological21 equality sensitivity,2
+Tariffs,src/setup/buildTariffs.m,TOU import .0499/.1199/.2499; export .0379 GBP/kWh,Three old scenarios do not locate onset,Repeated MILPs and bracket refinement,5
+Degradation,src/optimisation/buildObjective.m,Battery throughput; EV discharge-only .011 GBP/kWh,"Proxy, not calibrated ageing",Unchanged; limit interpretation,"2,7"
+Multi-day,results_extension/run_multiday_v2h_v2g.m,"90 selected IDs, old74 valid pairs",Selection and accuracy effects conflated,Fresh uncapped controls and full capped reoptimisation,1
+Monte Carlo,results_extension/run_monte_carlo_uncertainty.m,Fixed saved schedules; physical draws inactive,80 draws choose failed historical pairs,Retire analysis; preserve exact RNG audit,3
+Dates / data,Total_Data_house1.xlsx; House1_data_Struct.mat,Explicit Day Month Year agree,DayNum serial-date interpretation wrong; AllHouses MAT absent,Map explicit fields; mark historical outputs obsolete,4
+Solver bridge,C:/cvx/shims/cvx_gurobi.m,Custom settings passed to third argument,Gurobi accepts model and params only,Authorised one-line index 3 to2; private backup,"1,2,5"
+Tables / figures,Round2_revision/finalise_round2.m; summarise_round2.py; plot_round2.m,Certified runs only,Historical outputs must not be mixed,"Frozen MAT, CSV, workbooks, vector/600dpi figures",all
+Validation,Round2_revision/validateRound2.m,"Independent balances, SOC, logic and objective checks",Household validity is not feeder feasibility,Fail-fast finalise_round2.m,all
+External provenance,Swansea thesis / London Datastore,Documentary attribution only,Raw-meter/preparation chain not authenticated,Withhold prepared matrices pending rights check,6

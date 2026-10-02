@@ -1,0 +1,7 @@
+TerminalMode,ImportScale,OnsetLower_GBPperkWh,OnsetUpper_GBPperkWh,BracketWidth_GBPperkWh,ImportOffPeak_GBPperkWh,ImportMean_GBPperkWh,ImportPeak_GBPperkWh,OffPeakMinusOnsetUpper,MeanImportMinusOnsetUpper,SavingTolerance_GBP,ObservedNonmonotonicity,Interpretation
+none,0.75,0.0109375,0.011015625,7.81250000000001e-05,0.037425,0.0868,0.187425,0.026409375,0.075784375,1e-05,0,Local onset bracket after a zero/tolerance plateau; not a unique sign-changing root
+none,1,0.0109375,0.011015625,7.81250000000001e-05,0.0499,0.115733333333333,0.2499,0.038884375,0.104717708333333,1e-05,0,Local onset bracket after a zero/tolerance plateau; not a unique sign-changing root
+none,1.25,0.0109375,0.011015625,7.81250000000001e-05,0.062375,0.144666666666667,0.312375,0.051359375,0.133651041666667,1e-05,1,Local onset bracket after a zero/tolerance plateau; not a unique sign-changing root
+ge,0.75,0.0571875,0.057265625,7.81250000000053e-05,0.037425,0.0868,0.187425,-0.019840625,0.029534375,1e-05,1,Local onset bracket after a zero/tolerance plateau; not a unique sign-changing root
+ge,1,0.071953125,0.07203125,7.81250000000122e-05,0.0499,0.115733333333333,0.2499,-0.02213125,0.0437020833333333,1e-05,1,Local onset bracket after a zero/tolerance plateau; not a unique sign-changing root
+ge,1.25,0.086640625,0.08671875,7.81249999999983e-05,0.062375,0.144666666666667,0.312375,-0.02434375,0.0579479166666666,1e-05,1,Local onset bracket after a zero/tolerance plateau; not a unique sign-changing root

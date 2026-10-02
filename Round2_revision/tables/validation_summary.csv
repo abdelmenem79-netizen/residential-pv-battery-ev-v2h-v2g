@@ -1,0 +1,10 @@
+Check,MaxObserved,Tolerance,Pass,Runs
+BalanceMax_kW,3.47441519999e-11,1e-05,True,697
+GridSimultaneity_kW,4.14388523495e-10,1e-05,True,697
+EVChargeAway_kW,0,1e-05,True,697
+EVDischargeAway_kW,0,1e-05,True,697
+CostError_GBP,2.50910403565e-13,1e-06,True,697
+FirstTripError_kWh,1.21836762901e-10,1e-05,True,697
+TerminalViolation_kWh,4.41957581643e-12,1e-05,True,697
+PrincipalAbsoluteMIPGap_GBP,9.99307303573e-11,2e-08,True,543
+TariffMaxAbsoluteMIPGap_GBP,0.00488791799989,0.00500001,True,154

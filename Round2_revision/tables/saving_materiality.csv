@@ -1,0 +1,13 @@
+TerminalMode,ValidPairs,SavingThreshold_GBP,DaysAboveThreshold,PercentAboveThreshold
+none,90,1e-05,90,100
+none,90,0.0001,90,100
+none,90,0.001,90,100
+none,90,0.01,90,100
+ge,90,1e-05,45,50
+ge,90,0.0001,40,44.4444444444
+ge,90,0.001,32,35.5555555556
+ge,90,0.01,27,30
+eq,12,1e-05,3,25
+eq,12,0.0001,2,16.6666666667
+eq,12,0.001,0,0
+eq,12,0.01,0,0
