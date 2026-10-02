@@ -1,13 +1,13 @@
 # Residential PV-battery-EV scheduling: V2H and V2G
 
-Research code, derived result tables and figures prepared for the Round 2 revision. Repository: https://github.com/abdelmenem79-netizen/residential-pv-battery-ev-v2h-v2g. The author has authorised publication without a reuse licence for now. No MIT or other reuse licence is granted by this package. Prepared input redistribution remains unverified, and those inputs are excluded.
+Research code, derived result tables and figures prepared for the Round 2 revision. Repository: https://github.com/abdelmenem79-netizen/residential-pv-battery-ev-v2h-v2g. The author-owned code and its associated software documentation are released under the MIT licence in LICENSE, following explicit authorisation. Prepared input redistribution remains unverified, and those inputs are excluded.
 
 ## Authors and contacts
 - A. Alrashidi: 2263535@swansea.ac.uk
 - Ashraf Fahmy: a.a.fahmy@swansea.ac.uk
 - Abdelmenem Abobghala: abdelmenem.abobghala@uoz.edu.ly
 
-These names and public contact details were supplied and approved by the user. Public visibility must not be described as an open-source licence. Third-party software and data are not relicensed.
+These names and public contact details were supplied and approved by the user. MIT applies only to author-owned code and associated software documentation, not third-party code, prepared datasets, result data, figures or manuscript material. Any third-party rights and notices remain applicable. This release does not grant rights the authors do not hold. See RIGHTS_AND_RELEASE_STATUS.md for the remaining data limitations.
 
 ## Included
 Author project MATLAB helpers, R2.2 reserve/terminal solver fork, validators, tariff and restoration experiments, figure/table scripts, parameter-only MAT configuration, selected-day identifiers, derived aggregate tables and publication figures. CSV SourceMAT paths use PROJECT_ROOT placeholders. Their corresponding private schedules are not bundled.
